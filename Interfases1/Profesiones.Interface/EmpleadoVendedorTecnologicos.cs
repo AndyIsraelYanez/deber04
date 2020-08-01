@@ -4,7 +4,7 @@
     {
         public string Saludar()
         {
-            return "Se saluda primero  al cliente ya que es algo fundamental";
+            return "Se saluda primero  ya que es algo fundamental y de muy buena educación";
         }
         public string Atender()
         {

@@ -79,11 +79,13 @@
             EmpleadoVendedor = new EmpleadoVendedor();
             return "Se buscó un empleado para que se integre al almacen ";
         }
+        //Contratar Contratar EmpleadoVendedorElectrodomesticos
         public string ContratarEmpleadoVendedorElectrodomesticos()
         {
             EmpleadoVendedor = new EmpleadoVendedorElectrodomesticos();
             return "Se buscó un Empleado que sepa  acerca  de los electrodomésticos  y los pueda vender";
         }
+        //Contratar Empleado Vendedor Tecnologicos
         public string EmpleadoVendedorTecnologicos()
         {
             EmpleadoVendedor = new EmpleadoVendedorTecnologicos();

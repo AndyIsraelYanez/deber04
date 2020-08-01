@@ -13,92 +13,115 @@ namespace Profesiones.Consola
             }
 
             Organizacion LaOrganizacion = new Organizacion();
-            //Un empleado vendedor
+
+            //Un empleado vendedor electrodomesticos
             var empleadoVendedorElectrodomestico = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorElectrodomesticos());
             var empleadoVendedorElectrodomesticoAtender = LaOrganizacion.AtenderCliente();
+            //empleadoVendedor
             var empleadoVendedor = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedor());
             var empleadoVendedorAtender = LaOrganizacion.AtenderCliente();
+            //empleadoVendedor de Tecnologia
             var empleadoVendedorTecnologico = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorTecnologicos());
             var empleadoVendedorTecnologicoAtender = LaOrganizacion.AtenderCliente();
-            //El Gerente
+
+            //El Gerente 
             var gerente = LaOrganizacion.BuscarDuenoDeTienda(new Gerente());
             var gerenteConoceAlmacen = LaOrganizacion.ConocerAlmacen();
+            //Dueño de la tienda es importante conoceer que la ñ esta reemplazado por la N en las clases
             var duenoTienda = LaOrganizacion.BuscarDuenoDeTienda(new DuenoTienda());
             var duenoConeAlmacen = LaOrganizacion.ConocerAlmacen();
-            // Los Proveedores 
+
+            // Los Proveedores  de elctrodomésticos
             var proveedorElectrodomestico = LaOrganizacion.PedirProveedor(new ProveedorElectrodomesticos());
             var proveedorElectrodomesticoEntrega = LaOrganizacion.EntregarPedido();
+            // Los proveedores de equipos tecnológicos
             var proveedorTecnologico = LaOrganizacion.PedirProveedor(new ProveedorTecnologicos());
             var proveedorTecnologicoEntrega = LaOrganizacion.EntregarPedido();
 
-            //Los Administradores del almacen
+            //Los Administradores que trabajan en la jornada nocturna
             var administradorNocturno = LaOrganizacion.ContratarAdministrador(new AdministradorNocturno());
             var administradorNocturnoDesarrolla = LaOrganizacion.DesarrollarActividad();
+            //Los administradores que trabajan en la jornada del dia
             var administradorDia = LaOrganizacion.ContratarAdministrador(new AdministradorDia());
             var administradorDiaDesarrolla = LaOrganizacion.DesarrollarActividad();
 
-            //Horarios de trabajo en el dia o la noche 
+            //Horarios de trabajo de un empleado vendedor en la noche 
             var empleadoVendedorNocturno = LaOrganizacion.BuscarEmpleadosNocturno(new EmpleadoVendedorNocturno());
             var empleadoVendedorNocturnoDistribuir = LaOrganizacion.DistribuirTrabajo();
+            //Horarios de trabajo de un empleado vendedor en el dia 
             var empleadoVendedorDia = LaOrganizacion.BuscarEmpleadosNocturno(new EmpleadoVendedorDia());
             var empleadoVendedorDiaDistribuir = LaOrganizacion.DistribuirTrabajo();
 
-            Console.WriteLine($"\tBuscar elementos  para una buena administracion de (Almacenes)");
+
+            //titulo que se mostrara en la consola
+            Console.WriteLine($"--------------------");
+            Console.WriteLine($"- ");
+            Console.WriteLine($"--------------------");
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine($"\t Informacion de los roles que cumplen  los integrantes de un  (Almacen)");
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine($"--------------------");
             Console.WriteLine($"- ");
             Console.WriteLine($"--------------------");
 
-            //empleado vendedor
+           //empleado vendedor
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Especificación de ventas");
             Console.WriteLine(empleadoVendedorElectrodomestico + " Electrodomésticos");
             Console.WriteLine(empleadoVendedorElectrodomesticoAtender);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(empleadoVendedor + " Común");
             Console.WriteLine(empleadoVendedorAtender);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(empleadoVendedorTecnologico + " tecnológicos");
             Console.WriteLine(empleadoVendedorTecnologicoAtender);
 
             //El Gerente
-            Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Personas con mayor autoridad en el almacen");
+            Console.WriteLine($"-");
             Console.WriteLine(duenoTienda + " Dueño de Almacen");
             Console.WriteLine(duenoConeAlmacen);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(gerente + " Gerente");
             Console.WriteLine(gerenteConoceAlmacen);
 
             //Los Proveedores 
-            Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Los Proveedores   quienes abastecen de productos al almacen");
+            Console.WriteLine($"-");
             Console.WriteLine(proveedorTecnologico + " Dueño del Almacen");
             Console.WriteLine(proveedorTecnologicoEntrega);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(proveedorElectrodomestico + " Dueño del almacen");
             Console.WriteLine(proveedorElectrodomesticoEntrega);
 
             //Los Administradores del almacen en sus Horarios
-            Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Los Administradores del almacen en sus Horarios");
+            Console.WriteLine($"-");
             Console.WriteLine(administradorNocturno + " en el almacen");
             Console.WriteLine(administradorNocturnoDesarrolla);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(administradorDia + " en el almacen");
             Console.WriteLine(administradorDiaDesarrolla);
 
             //Horarios de trabajo en el dia o la noche  de un empleado vendedor
-            Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"Horarios de trabajo en el dia o la noche  de un empleado vendedor");
+            Console.WriteLine($"-");
             Console.WriteLine(empleadoVendedorNocturno + " Dia");
             Console.WriteLine(empleadoVendedorNocturnoDistribuir);
             Console.WriteLine($"- ");
-            Console.WriteLine($"--------------------");
+            Console.WriteLine($"-");
             Console.WriteLine(empleadoVendedorDia + " Noche");
             Console.WriteLine(empleadoVendedorDiaDistribuir);
+            Console.BackgroundColor = ConsoleColor.Black;
 
             Console.ReadKey();
         }

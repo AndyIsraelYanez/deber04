@@ -5,7 +5,7 @@
 
         public string RealizarCalculoVentas()
         {
-            return "Realizo el calculo de ventas que se realizan  en la dias";
+            return "Realizo el calculo de ventas que se realizan  en la jornada vespertina";
         }
 
         public string AsignarTareas()
