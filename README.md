@@ -1,9 +1,7 @@
  # Programación Orientada a Objetos 
 
-<h1>El siguiente programa   es realizado en consola de  C# , es un simulador   de compras   de artículos para la cocina 
-  y artículos para el estudio, en donde consiste en ingresar su nombre  y apellido , para luego seleccionar hacia que 
-  categoría quiere dirigirse,una vez realizado mostrara  una lista  de los productos, ante eso puede seleccionar el que 
-  desee  poniendo la posición en la que se encuentre dicho artículo para luego mostrarle así todo la información del producto .</h1>
+<h1>El siguiente programa   es realizado en consola de  C# ,proporciona informacion de los roles que existe  en un almacen , teniendo en cuenta  una gerarquización 
+ de primero el dueño del almacen , gerente , administrador, empleado vendedor y los proveeedores , para concer las funcionalidades que realizan  cada uno  y los horrarios en lo que trabajan .</h1>
 
 
 | Artículos De Estudio | Artículos De Cocina |
@@ -28,4 +26,14 @@
  <ol> 
 <li> Lo descargamos como archivo zip.</li> 
 <li>Lo extraemos donde nos parezca mas factible.</li> 
-<li>Abrimos el Visual studio.</li>
+<li>Abrimos el Visual studio.</li> 
+<li>Buscamos la carpeta extraida "".</li> 
+<li>Una vez dentro de la carpeta en la parte derecha damos clic en el nombre del archivo.cs y lo ejecutamos.</li> 
+<li>De la msima manera puede realizar una clonación  del proyecto.</li> 
+  </ol> 
+ 
+  
+  # Contacto Correo electrónico
+  
+  <h2>  drag.andy@outlook.com</h2>
+
