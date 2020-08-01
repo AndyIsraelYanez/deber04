@@ -1,7 +1,7 @@
  # Programación Orientada a Objetos 
 
-<h1>El siguiente programa   es realizado en consola de  C# ,proporciona informacion de los roles que existe  en un almacen , teniendo en cuenta  una gerarquización 
- de primero el dueño del almacen , gerente , administrador, empleado vendedor y los proveeedores , para concer las funcionalidades que realizan  cada uno  y los horrarios en lo que trabajan .</h1>
+<h1>El siguiente programa   es realizado en consola de  C# ,proporciona información de los roles que existe  en un almacén , teniendo en cuenta  una gerarquización 
+ de primero el dueño del almacén , gerente , administrador, empleado vendedor y los proveeedores , para concer las funcionalidades que realizan  cada uno  y los horrarios en lo que trabajan .</h1>
 
 
 | Artículos De Estudio | Artículos De Cocina |
@@ -14,8 +14,8 @@
 <li> Pasando una interfaz como parámetro y devolviendo una interfaz.</li> 
 <li>Implementar múltiples interfaces.</li> 
 <li>Consta de clases</li> 
-<li>Metodos</li> 
-<li>Existe interaccion</li> 
+<li>Métodos</li> 
+<li>Existe interacción</li> 
 <li>Existen instancias por cada objeto.</li> 
   
 
