@@ -1,7 +1,17 @@
-﻿namespace Profesiones.Interface
+﻿using Profesiones.Entidad;
+using Profesiones.Interface;
+using Profesiones.Negocio;
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+namespace Profesiones.Implementacion
 {
-    public class DuenoTienda : IDuenoDeTienda
+    public class DuenoTienda : IDuenoDeTienda, IEquatable<DuenoTienda>
+
     {
+        private readonly DuenoPrincipal dueñoPrincipal = new DuenoPrincipal();
+        public int Id { get { return dueñoPrincipal.Id; } set { dueñoPrincipal.Id = value; } }
+        public DuenoPrincipal DuenoPrincipal { get; set; }
         public Almacen Almacen { get; set; }
 
         public Almacen Fabrica = new Almacen()
@@ -17,7 +27,10 @@
             Nombre = "GANGA MASTER"
         };
 
-
+        public bool Equals([AllowNull] DuenoTienda other)
+        {
+            return this.Id == other.Id;
+        }
 
         public string SupervisarEmpleados()
         {
@@ -42,6 +55,6 @@
         public string PagarDinero()
         {
             return $"Me encargo  de pagar  los salarios   a todos  los trabajadores del almacen  {Fabrica3.Nombre}";
-        }       
+        }
     }
 }

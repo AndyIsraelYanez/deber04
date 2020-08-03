@@ -1,4 +1,5 @@
-﻿using Profesiones.Interface;
+﻿using Profesiones.Negocio;
+using Profesiones.Implementacion;
 using System;
 
 namespace Profesiones.Consola
@@ -14,11 +15,15 @@ namespace Profesiones.Consola
 
             Organizacion LaOrganizacion = new Organizacion();
 
+            Random generador = new Random();
+
+
             //Un empleado vendedor electrodomesticos
-            var empleadoVendedorElectrodomestico = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorElectrodomesticos());
-            var empleadoVendedorElectrodomesticoAtender = LaOrganizacion.AtenderCliente();
+            var empleadoElectrodomestico = new EmpleadoVendedorElectrodomesticos { Id = generador.Next() };
+            var empleadoVendedorElectrodomestico = LaOrganizacion.ContratarEmpleadoVendedor(empleadoElectrodomestico);
+            var empleadoElectrodomesticoAtender = LaOrganizacion.AtenderCliente();
             //empleadoVendedor
-            var empleadoVendedor = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedor());
+            var empleadoVendedor = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorCualquiera());
             var empleadoVendedorAtender = LaOrganizacion.AtenderCliente();
             //empleadoVendedor de Tecnologia
             var empleadoVendedorTecnologico = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorTecnologicos());
@@ -64,11 +69,12 @@ namespace Profesiones.Consola
             Console.WriteLine($"- ");
             Console.WriteLine($"--------------------");
 
-           //empleado vendedor
+            //empleado vendedor
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"Especificación de ventas");
-            Console.WriteLine(empleadoVendedorElectrodomestico + " Electrodomésticos");
-            Console.WriteLine(empleadoVendedorElectrodomesticoAtender);
+            Console.WriteLine($"{empleadoElectrodomestico.Id} {empleadoVendedorElectrodomestico} electrodomestico");
+            Console.WriteLine(empleadoElectrodomesticoAtender);
+
             Console.WriteLine($"- ");
             Console.WriteLine($"-");
             Console.WriteLine(empleadoVendedor + " Común");

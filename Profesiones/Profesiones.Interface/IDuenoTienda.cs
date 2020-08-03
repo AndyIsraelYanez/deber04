@@ -1,4 +1,5 @@
-﻿namespace Profesiones.Interface
+﻿
+namespace Profesiones.Interface
 {
     public interface IDuenoDeTienda
     {

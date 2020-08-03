@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Profesiones.Entidad\Profesiones.Entidad.csproj" />
+    <ProjectReference Include="..\Profesiones.Interface\Profesiones.Interface.csproj" />
+    <ProjectReference Include="..\Profesiones.Negocio\Profesiones.Negocio.csproj" />
+  </ItemGroup>
+
+</Project>

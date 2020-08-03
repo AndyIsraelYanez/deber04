@@ -1,4 +1,6 @@
-﻿namespace Profesiones.Interface
+﻿using Profesiones.Interface;
+
+namespace Profesiones.Negocio
 {
     public class Organizacion
     {
@@ -74,7 +76,7 @@
                 $", {HorarioVendedor.CobrarDinero()},y {HorarioVendedor.DarCambio()}";
         }
         //Contratar Empleados  en especifico
-        public string ContratarEmpleadoVendedor()
+       /* public string ContratarEmpleadoVendedor()
         {
             EmpleadoVendedor = new EmpleadoVendedor();
             return "Se buscó un empleado para que se integre al almacen ";
@@ -90,7 +92,7 @@
         {
             EmpleadoVendedor = new EmpleadoVendedorTecnologicos();
             return "Se buscó un Empleado que sepa  acerca  de los productos tecnológicos  y los pueda vender";
-        }
+        }*/
 
     }
 }

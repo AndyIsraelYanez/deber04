@@ -1,7 +1,15 @@
-﻿namespace Profesiones.Interface
+﻿using Profesiones.Entidad;
+using Profesiones.Interface;
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+namespace Profesiones.Implementacion
 {
-    public class AdministradorDia : IAdministrador
+    public class AdministradorDia : IAdministrador,IEquatable<AdministradorDia>
     {
+        private readonly Administrador1 administrador = new Administrador1();
+        public int Id { get { return administrador.Id; } set { administrador.Id = value; } }
+        public Administrador1 Administrador1 { get; set; }
 
         public string RealizarCalculoVentas()
         {
@@ -21,6 +29,11 @@
         public string PlanearEstrategiasVentas()
         {
             return "Observo  y reviso estrategias de marketing";
+        }
+
+        public bool Equals([AllowNull] AdministradorDia other)
+        {
+            return this.Id == other.Id;
         }
     }
 }

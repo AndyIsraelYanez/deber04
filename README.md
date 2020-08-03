@@ -31,9 +31,3 @@
 <li>Una vez dentro de la carpeta en la parte derecha damos clic en el nombre del archivo.cs y lo ejecutamos.</li> 
 <li>De la msima manera puede realizar una clonación  del proyecto.</li> 
   </ol> 
- 
-  
-  # Contacto Correo electrónico
-  
-  <h2>  drag.andy@outlook.com</h2>
-
