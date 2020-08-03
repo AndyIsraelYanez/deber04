@@ -1,7 +1,7 @@
  # Programación Orientada a Objetos 
 
 <h1>El siguiente programa   es realizado en consola de  C# ,proporciona información de los roles que existe  en un almacén , teniendo en cuenta  una gerarquización 
- de primero el dueño del almacén , gerente , administrador, empleado vendedor y los proveeedores , para concer las funcionalidades que realizan  cada uno  y los horarios en lo que trabajan .</h1>
+ de primero el dueño del almacén , gerente , administrador, empleado vendedor y los proveeedores , para conocer las funcionalidades que realizan  cada uno  y los horarios en lo que trabajan .</h1>
 
 
 | Artículos De Estudio | Artículos De Cocina |
