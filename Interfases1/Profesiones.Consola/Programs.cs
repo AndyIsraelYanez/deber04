@@ -15,12 +15,12 @@ namespace Profesiones.Consola
 
             Organizacion LaOrganizacion = new Organizacion();
 
-            Random generador = new Random();
+          
 
 
             //Un empleado vendedor electrodomesticos
-            var empleadoElectrodomestico = new EmpleadoVendedorElectrodomesticos { Id = generador.Next() };
-            var empleadoVendedorElectrodomestico = LaOrganizacion.ContratarEmpleadoVendedor(empleadoElectrodomestico);
+           
+            var empleadoElectrodomestico = LaOrganizacion.ContratarEmpleadoVendedor( new EmpleadoVendedorElectrodomesticos());
             var empleadoElectrodomesticoAtender = LaOrganizacion.AtenderCliente();
             //empleadoVendedor
             var empleadoVendedor = LaOrganizacion.ContratarEmpleadoVendedor(new EmpleadoVendedorCualquiera());
@@ -72,7 +72,7 @@ namespace Profesiones.Consola
             //empleado vendedor
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"Especificación de ventas");
-            Console.WriteLine($"{empleadoElectrodomestico.Id} {empleadoVendedorElectrodomestico} electrodomestico");
+            Console.WriteLine(empleadoElectrodomestico);
             Console.WriteLine(empleadoElectrodomesticoAtender);
 
             Console.WriteLine($"- ");
